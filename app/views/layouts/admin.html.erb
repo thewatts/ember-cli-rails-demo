@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <%= stylesheet_link_tag "admin" %>
+    <%= include_ember_stylesheet_tags :admin %>
     <%= include_ember_script_tags :admin %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>

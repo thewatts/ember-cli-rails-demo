@@ -1,0 +1,11 @@
+<h1>Events</h1>
+<ul>
+  {{#each event in model}}
+    <li>{{event.name}}</li>
+  {{/each}}
+</ul>
+
+<form {{action "createEvent" on="submit"}}>
+  {{input value=name type="text"}}
+  <button>Save</button>
+</form>
